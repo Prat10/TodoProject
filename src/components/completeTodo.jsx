@@ -1,8 +1,6 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import LeftTodo from "./leftTodo";
-import RightTodo from "./RightTodo";
 import { useTodo } from "@/context/TodoProvider ";
 import RighTodo from "./CustomEditor";
 

@@ -1,6 +1,6 @@
 "use client";
+
 const Card = (props) => {
-  console.log(props.detail)
   // Function to strip HTML tags
 const stripHtml = (html, maxLength = 50) => {
   if (!html) return ""; // Handle null/undefined case
@@ -16,7 +16,7 @@ function formatDateFromTimestamp(timestamp) {
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   return date.toLocaleDateString('en-US', options);
 }
-  const plainText = stripHtml(props?.detail?.description,30);
+const plainText = stripHtml(props?.detail?.description,30);
     return (
       <div className="bg-white p-4 rounded-lg shadow-md w-full h-[97px] cursor-pointer"
        onClick={() => props.handleCardClick && props.handleCardClick(props.detail)}> 
@@ -29,5 +29,5 @@ function formatDateFromTimestamp(timestamp) {
     );
   };
   
-  export default Card;
+export default Card;
   

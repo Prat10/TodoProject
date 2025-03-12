@@ -1,8 +1,7 @@
 "use client";
 import { useTodo } from "@/context/TodoProvider ";
 import axios from "axios";
-// import { useTodo } from "@/context/TodoProvider";
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const RighTodo = () => {
   const [content, setContent] = useState("");
